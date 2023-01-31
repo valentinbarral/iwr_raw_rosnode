@@ -13,7 +13,7 @@ import socket
 import serial
 import pdb
 from mmWave_class_noQt import mmWave_Sensor
-import Queue
+import queue as Queue
 import threading
 import pickle
 from radar_config import cfg_list_to_dict

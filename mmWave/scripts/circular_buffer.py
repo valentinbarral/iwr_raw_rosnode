@@ -1,6 +1,6 @@
 import os
 import numpy as np
-import Queue
+import queue as Queue
 from ctypes import *
 from numpy.ctypeslib import ndpointer
 import threading

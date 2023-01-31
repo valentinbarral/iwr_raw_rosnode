@@ -1,0 +1,9 @@
+<launch>
+<!-- echo -n 0451 fd03 | sudo tee /sys/bus/usb-serial/drivers/ftdi_sio/new_id -->
+<arg name="xwr_cmd_tty" default="/dev/ttyUSB1"/>
+<arg name="xwr_radar_cfg" default="68xx/tracking_people_6m_6843ISK"/>
+
+<node name="xwr1xxx" pkg="mmWave" type="no_Qt.py" required="true" output="screen"
+    args="--cmd_tty $(arg xwr_cmd_tty) $(arg xwr_radar_cfg)"/>
+<node name="xwr1xxx_rd_viz" pkg="mmWave" type="fft_viz.py" />
+</launch>

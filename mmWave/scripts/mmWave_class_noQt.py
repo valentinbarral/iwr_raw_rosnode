@@ -12,7 +12,7 @@ import struct
 import numpy as np
 # import RadarRT_lib
 from circular_buffer import ring_buffer
-import Queue
+import queue as Queue
 from  ctypes import *
 from radar_config import dict_to_list
 
